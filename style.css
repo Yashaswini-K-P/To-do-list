@@ -4,7 +4,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
 }
+
+
 #box{
     height: 30px;
     font-size: 20px;
@@ -13,4 +16,15 @@ body {
 li {
     font-size: 20px;
     justify-content: space-between;
+}
+@media (max-width: 768px) {
+    li {
+        font-size: 24px; /* Increased font size for better readability on mobile */
+    }
+    #box {
+        font-size: 18px;
+    }
+    li {
+        font-size: 20px;
+    }
 }
